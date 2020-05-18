@@ -1,0 +1,200 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "zachary",
+      "lastname": "moseti",
+      "email": "zachy@gmail.com",
+      "age": "19",
+      "companyId": 1
+    },
+    {
+      "id": "2",
+      "firstname": "rodgers",
+      "lastname": "ndocha",
+      "email": "makori@gmail.com",
+      "age": "20",
+      "companyId": 2
+    },
+    {
+      "id": 3,
+      "firstname": "monica",
+      "lastname": "waweru",
+      "email": "monica@gmail.com",
+      "age": "20",
+      "companyId": 3
+    },
+    {
+      "id": 5,
+      "firstname": "jennie",
+      "lastname": "kibiri",
+      "age": "20",
+      "email": "dev@gmail.com",
+      "companyId": 4
+    },
+    {
+      "id": 4,
+      "firstname": "jennie",
+      "lastname": "develoer",
+      "email": "dev@gmail.com",
+      "age": "20",
+      "companyId": 4
+    },
+    {
+      "id": 6,
+      "firstname": "john",
+      "lastname": "bash",
+      "email": "bash@gmail.com",
+      "age": "27",
+      "companyId": 6
+    },
+    {
+      "id": 7,
+      "firstname": "mary",
+      "lastname": "bash",
+      "email": "mary@gmail.com",
+      "age": "24",
+      "companyId": 7
+    },
+    {
+      "id": 8,
+      "firstname": "irene",
+      "lastname": "nduku",
+      "email": "nduku@gmail.com",
+      "age": "24",
+      "companyId": 8
+    },
+    {
+      "id": 9,
+      "firstname": "jose",
+      "lastname": "maina",
+      "email": "jose@gmail.com",
+      "age": "24",
+      "companyId": 9
+    },
+     {
+      "id": 10,
+      "firstname": "paul",
+      "lastname": "maina",
+      "email": "maina@gmail.com",
+      "age": "20",
+      "companyId": 10
+    },
+    {
+      "id": 11,
+      "firstname": "john",
+      "lastname": "kamau",
+      "email": "kamau@gmail.com",
+      "age": "20",
+      "companyId": 11
+    },
+    {
+      "id": 12,
+      "firstname": "wilson",
+      "lastname": "dev",
+      "email": "wilson@gmail.com",
+      "age": "20",
+      "companyId": 12
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "Apple",
+      "location": "Eldoret",
+      "description": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services. It is considered one of the Big Four technology companies, alongside Amazon, Google, and Microsoft.[6][7][8]"
+    },
+    {
+      "id": 2,
+      "name": "Facebook",
+      "location": "Nairobi",
+      "description": "Facebook is an American online social media and social networking service based in Menlo Park, California and a flagship service of the namesake company Facebook, Inc. It was founded by Mark Zuckerberg, along with fellow Harvard College students and roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes."
+    },
+    {
+      "id": 3,
+      "name": "Amazon",
+      "location": "Nakuru",
+      "description": "Amazon.com, Inc.[7] (/ˈæməzɒn/), is an American multinational conglomerate technology company based in Seattle, with 750,000 employees.[8] It focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. It is considered one of the Big Four tech companies, along with Google, Apple, and Microsoft.[9][10][11] It has been referred to as one of the most influential economic and cultural forces in the world."
+    },
+    {
+      "id": 4,
+      "name": "Google",
+      "location": "Kisii",
+      "description": "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising"
+    },
+    {
+      "name": "Safaricom",
+      "location": "Nairobi",
+      "description": "Safaricom is a leading communications company in Kenya with the widest and strongest coverage. The home of the famous Mobile Money service- M-PESA and",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "name": "Eldotec",
+      "location": "Eldoret",
+      "description": "Eldotec Consultancy Services Inc. specializes in supply chain communication and outreach to help bridge the gap between our clients and their customers"
+    },
+    {
+      "id": 7,
+      "name": "iHub",
+      "location": "Nairobi",
+      "description": "iHub is an Innovation hub and hacker space for the technology community in Nairobi was started in March 2010 by Erik Hersman a blogger"
+    },
+    {
+      "id": 8,
+      "name": "Tech star",
+      "location": "Nairobi",
+      "description": "Tech star is an Innovation hub and hacker space for the technology community in Nairobi was started in March 2010 by Erik Hersman a blogger"
+    },
+    {
+      "id": 9,
+      "name": "TechKnow",
+      "location": "Eldoret",
+      "description": "TechKnow is an Innovation hub and hacker space for the technology community in Nairobi was started in March 2010 by Erik Hersman a blogger"
+    },
+      {
+      "id": 10,
+      "name": "TechCrunch",
+      "location": "Kisumu",
+      "description": "TechCrunch is an Innovation hub and hacker space for the technology community in Kisumu was started in March 2010 by Erik Hersman a blogger"
+    },
+    {
+      "id": 11,
+      "name": "MLH",
+      "location": "Eldoret",
+      "description": "Major League Hacking, officially abbreviated as MLH, is a company that operates a league for student hackathons"
+    }
+  ],
+"posts": [
+  {
+    "postId": 1,
+    "name": "coding is fun",
+    "email": "Eliseo@gardner.biz",
+    "body": "I love coding because this is what trains the human brain to think creatively and provide best soutions."
+    },
+    {
+    "postId": 2,
+    "name": "Tech journey",
+    "email": "Jayne_Kuhic@sydney.com",
+    "body": "Myu tech journey has not been that easy,I have tried various technologies to see where i can fit.But now i am a skilled web developer."
+    },
+    {
+    "postId": 3,
+    "name": "Nothing is impossibble",
+    "email": "Nikita@garfield.biz",
+    "body": "Nothing is impossible,you just have to set yourself to achieve the very best of you."
+    },
+    {
+      "postId": 4,
+      "name": "Google Developer Expert",
+      "email": "zachy@gmail.com",
+      "body": "I am a Google Developer Expert in web technologies."
+      },
+      {
+        "postId": 5,
+        "name": "Geek Talk Thursday",
+        "email": "doro@gmail.com",
+        "body": "I am a lead GTT."
+        }
+]
+}
