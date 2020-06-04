@@ -3,45 +3,44 @@
       "id": 1,
       "picture": "http://placehold.it/32x32",
       "age": 23,
-      "name": "Bird Ramsey",
+      "name": "Paul Mwangi",
       "gender": "male",
-      "company": "NIMON",
+      "company": "Awesome Inc",
       "email": "birdramsey@nimon.com"
    },
    {
       "id": 2,
       "picture": "http://placehold.it/32x32",
       "age": 31,
-      "name": "Lillian Burgess",
+      "name": "Fatma Ali",
       "gender": "female",
-      "company": "LUXURIA",
-      "email": "lillianburgess@luxuria.com"
+      "company": "Awesome Inc",
+      "email": "fatma@awesomeke.com"
    },
    {
       "id": 3,
-      "balance": "$2,820.18",
       "age": 34,
-      "name": "Kristie Cole",
+      "name": "June Barasa",
       "gender": "female",
-      "company": "QUADEEBO",
-      "email": "kristiecole@quadeebo.com"
+      "company": "Awesome Inc",
+      "email": "june@awesomeke.com"
    },
    {
       "id": 4,
       "picture": "http://placehold.it/32x32",
       "age": 30,
-      "name": "Leonor Cross",
+      "name": "Gertrude Nyenyeshi",
       "gender": "female",
-      "company": "GRONK",
-      "email": "leonorcross@gronk.com"
+      "company": "BBC",
+      "email": "gerty@awesomeke.com"
    },
    {
       "id": 5,
       "picture": "http://placehold.it/32x32",
       "age": 28,
-      "name": "Marsh Mccall",
+      "name": "Allan Juma",
       "gender": "male",
-      "company": "ULTRIMAX",
-      "email": "marshmccall@ultrimax.com"
+      "company": "Android 254",
+      "email": "allan@awesomeke.com"
    }
 ]
