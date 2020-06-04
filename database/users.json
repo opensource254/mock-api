@@ -1,17 +1,47 @@
 [
-    {
-       "id": 1,
-       "name": "John Doe",
-       "email": "john@example.com"
-    },
-    {
-       "id": 2,
-       "name": "Jane Doe",
-       "email": "jane@example.com"
-    },
-    {
-       "id": 3,
-       "name": "Ashley Doe",
-       "email": "ashley@example.com"
-    }
- ]
+   {
+      "id": 1,
+      "picture": "http://placehold.it/32x32",
+      "age": 23,
+      "name": "Bird Ramsey",
+      "gender": "male",
+      "company": "NIMON",
+      "email": "birdramsey@nimon.com"
+   },
+   {
+      "id": 2,
+      "picture": "http://placehold.it/32x32",
+      "age": 31,
+      "name": "Lillian Burgess",
+      "gender": "female",
+      "company": "LUXURIA",
+      "email": "lillianburgess@luxuria.com"
+   },
+   {
+      "id": 3,
+      "balance": "$2,820.18",
+      "age": 34,
+      "name": "Kristie Cole",
+      "gender": "female",
+      "company": "QUADEEBO",
+      "email": "kristiecole@quadeebo.com"
+   },
+   {
+      "id": 4,
+      "picture": "http://placehold.it/32x32",
+      "age": 30,
+      "name": "Leonor Cross",
+      "gender": "female",
+      "company": "GRONK",
+      "email": "leonorcross@gronk.com"
+   },
+   {
+      "id": 5,
+      "picture": "http://placehold.it/32x32",
+      "age": 28,
+      "name": "Marsh Mccall",
+      "gender": "male",
+      "company": "ULTRIMAX",
+      "email": "marshmccall@ultrimax.com"
+   }
+]
