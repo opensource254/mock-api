@@ -1,0 +1,46 @@
+[
+   {
+      "id": 1,
+      "picture": "http://placehold.it/32x32",
+      "age": 23,
+      "name": "Paul Mwangi",
+      "gender": "male",
+      "company": "Awesome Inc",
+      "email": "birdramsey@nimon.com"
+   },
+   {
+      "id": 2,
+      "picture": "http://placehold.it/32x32",
+      "age": 31,
+      "name": "Fatma Ali",
+      "gender": "female",
+      "company": "Awesome Inc",
+      "email": "fatma@awesomeke.com"
+   },
+   {
+      "id": 3,
+      "age": 34,
+      "name": "June Barasa",
+      "gender": "female",
+      "company": "Awesome Inc",
+      "email": "june@awesomeke.com"
+   },
+   {
+      "id": 4,
+      "picture": "http://placehold.it/32x32",
+      "age": 30,
+      "name": "Gertrude Nyenyeshi",
+      "gender": "female",
+      "company": "BBC",
+      "email": "gerty@awesomeke.com"
+   },
+   {
+      "id": 5,
+      "picture": "http://placehold.it/32x32",
+      "age": 28,
+      "name": "Allan Juma",
+      "gender": "male",
+      "company": "Android 254",
+      "email": "allan@awesomeke.com"
+   }
+]

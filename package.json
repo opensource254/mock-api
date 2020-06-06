@@ -1,14 +1,33 @@
 {
-  "name": "zachyapi",
+  "name": "mock-api",
   "version": "1.0.0",
-  "description": "Fake REST API for testing and prototyping",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "json-server": "json-server --watch db.json"
+    "start": "node ./bin/www",
+    "dev": "DEBUG=mock-api:* nodemon start"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "json-server": "^0.16.1"
-  }
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "description": "A simple mock API server for development purposes.",
+  "main": "bin/www",
+  "keywords": [
+    "Mock",
+    "API",
+    "JSON",
+    "opensource254",
+    "dev",
+    "server",
+    "developer",
+    "tools"
+  ],
+  "author": "opensource254",
+  "license": "MIT"
 }
