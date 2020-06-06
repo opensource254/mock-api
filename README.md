@@ -1,4 +1,4 @@
-# mock API
+# Mock API
 >TestAPI is  a fake online REST API for testing and prototyping.
 
 ## Endpoints
@@ -38,3 +38,5 @@ for the sake of clarity here is a few guidelines on how to contribute.
 2. Work on your feature
 3. Create a pull request and let us discuss and review your awesome feature
 
+## Demo
+The API is live here [https://mock-api.opensource254.co.ke/](https://mock-api.opensource254.co.ke/)
