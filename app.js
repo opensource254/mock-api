@@ -7,6 +7,7 @@ const cors = require('cors')
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const postsRouter = require('./routes/posts')
+const productRouter = require('./routes/products')
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use(cors())
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/posts', postsRouter)
+app.use('/posts', postsRouter);
+app.use('/products', productRouter)
 
 module.exports = app;
