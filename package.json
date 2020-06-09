@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "DEBUG=mock-api:* nodemon start"
+    "dev": "DEBUG=mock-api:* nodemon start",
+    "test": "mocha tests/*.test.js --config .mocharc.json"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -14,6 +15,9 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.2.0",
     "nodemon": "^2.0.4"
   },
   "description": "A simple mock API server for development purposes.",
