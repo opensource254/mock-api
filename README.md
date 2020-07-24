@@ -11,6 +11,7 @@
 | /posts/:id                   |  GET   |  Returns the post with the specified ID   |
 | /products                    |  GET   |  Returns a collection of products         |
 | /products/:sku               |  GET   |  Returns the products with the specified sku|
+| /restaurants                 |  GET   |  Returns a collection of restaurant data  |
 
 ## Development 
 1. Clone this repository `git clone https://github.com/opensource254/mock-api.git`
