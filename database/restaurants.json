@@ -1,0 +1,85 @@
+[
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat":-1.263964,
+                "lng":36.8220353
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "051d81107a55faa819fbfa41409d155a930fda40",
+        "restaurant_name": "Pizza Inn",
+        "place_id": "ChIJ3Uuv9x8XLxgRQVM21qXjvZ0",
+        "price_level": 2,
+        "average_rating": 4.1,
+        "ratings":[
+            {
+                "stars":5,
+                "comment":"Please to experience Western African dishes. Live music, friendly stuffs. Ambience! Awesome children playing area."
+             },
+             {
+                "stars":5,
+                "comment":"The place has a beautiful gardenic setting with great and marvellous service. And the food....wow wow wow! "
+             }
+         ],
+        "types": ["restaurant", "food", "point_of_interest", "establishment"],
+        "user_ratings_total": 1401,
+        "vicinity": "Limuru Road, Nairobi"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat":-1.263888,
+                "lng":36.8220833
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "5a9a202fc80bb0cc995462b3c2d2b22093af73e9",
+        "restaurant_name": "Creamy Inn-Parklands",
+        "place_id": "ChIJYa5q9x8XLxgRCEp4BQSVVjA",
+        "average_rating": 3.3,
+        "ratings":[
+            {
+                "stars":4,
+                "comment":"One of the best waiters in Nairobi! Great and professional service! Older gentleman who wears spectacles. Really knows his food and wine. I didn't enjoy my beef canelloni because the meat was more like sausage meat as opposed to a beef"
+             },
+             {
+                "stars":2,
+                "comment":"Very decent Italian food. Service rather slow, but friendly when they get to you"
+             }
+         ],
+        "types": ["restaurant", "food", "point_of_interest", "establishment"],
+        "user_ratings_total": 9,
+        "vicinity": "Limuru Road, Nairobi"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat":-1.263712,
+                "lng":36.8222203
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "0e49e1f29b829a3e6c0e399cc4b6316c0715da9d",
+        "restaurant_name": "My Shop-Parklands",
+        "place_id": "ChIJn6Vj-h8XLxgRs-qT2FfOt9E",
+        "average_rating": 2.5,
+        "ratings":[
+            {
+               "stars":2,
+               "comment":"Good food"
+            },
+            {
+               "stars":3,
+               "comment":"Meh, it was fine."
+            }
+         ],
+        "types": ["restaurant", "food", "point_of_interest", "establishment"],
+        "user_ratings_total": 1401,
+        "vicinity": "Limuru Road, Nairobi"
+    }
+    
+]
