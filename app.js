@@ -7,6 +7,7 @@ const cors = require('cors')
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const postsRouter = require('./routes/posts');
+const postWithUserRouter = require('./routes/postwithuser');
 const productRouter = require('./routes/products');
 const restaurantsRouter = require('./routes/restaurants');
 
@@ -22,6 +23,7 @@ app.use(cors())
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/posts', postsRouter);
+app.use('/postwithuser', postWithUserRouter);
 app.use('/products', productRouter)
 app.use('/restaurants', restaurantsRouter)
 
