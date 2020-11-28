@@ -9,6 +9,7 @@
 | /users/:id                   |  GET   |  Return user with the specified id        |
 | /posts                       |  GET   |  Returns a collection of posts            |
 | /posts/:id                   |  GET   |  Returns the post with the specified ID   |
+| /postwithuser/:id            |  GET   |  Returns the post with the specified ID and the user data |
 | /products                    |  GET   |  Returns a collection of products         |
 | /products/:sku               |  GET   |  Returns the products with the specified sku|
 | /restaurants                 |  GET   |  Returns a collection of restaurant data  |
