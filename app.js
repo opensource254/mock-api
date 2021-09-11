@@ -10,6 +10,7 @@ const postsRouter = require('./routes/posts');
 const postWithUserRouter = require('./routes/postwithuser');
 const productRouter = require('./routes/products');
 const restaurantsRouter = require('./routes/restaurants');
+const authRouter = require('./routes/auth');
 
 const app = express();
 
@@ -26,5 +27,6 @@ app.use('/posts', postsRouter);
 app.use('/postwithuser', postWithUserRouter);
 app.use('/products', productRouter)
 app.use('/restaurants', restaurantsRouter)
+app.use('/auth', authRouter)
 
 module.exports = app;
