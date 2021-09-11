@@ -13,6 +13,7 @@
 | /products                    |  GET   |  Returns a collection of products         |
 | /products/:sku               |  GET   |  Returns the products with the specified sku|
 | /restaurants                 |  GET   |  Returns a collection of restaurant data  |
+| /auth/login                  |  POST  |  Returns a token for the user             |
 
 ## Development 
 1. Clone this repository `git clone https://github.com/opensource254/mock-api.git`
