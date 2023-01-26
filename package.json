@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "DEBUG=mock-api:* nodemon start",
+    "dev": "nodemon start",
     "test": "mocha tests/*.test.js --config .mocharc.json"
   },
   "dependencies": {
@@ -13,9 +13,13 @@
     "debug": "~2.6.9",
     "express": "~4.17.3",
     "faker": "^5.5.3",
-    "morgan": "~1.9.1"
+    "ioredis": "^5.3.0",
+    "morgan": "~1.9.1",
+    "redis": "^4.6.1",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "mocha": "^10.2.0",
