@@ -10,15 +10,20 @@ const redis = require("../lib/redis");
 /* GET users listing. */
 router.get("/", function (req, res, _next) {
   const users = [];
-  for (let id = 1; id <= 10; id++) {
+  for (let id = 1; id <= 100; id++) {
     let firstName = faker.name.firstName();
     let lastName = faker.name.lastName();
     let email = faker.internet.email();
+    let gender = faker.name.gender();
+    let career = faker.name.jobTitle();
+
     users.push({
       id: id,
       first_name: firstName,
       last_name: lastName,
       email: email,
+      gender: gender,
+      career: career,
     });
   }
 
@@ -46,19 +51,5 @@ router.get("/:user", (req, res, _next) => {
     }
   });
 });
-
-/**
- * GET a user using user_id
- */
-// router.get("/:user", (req, res, _next) => {
-//   console.log("here2");
-//   const userId = req.params.user;
-//   if (userId == 0 || userId > users.length) {
-//     res.status(404);
-//     res.json("User Not Found");
-//     return;
-//   }
-//   res.json(users[userId - 1]);
-// });
 
 module.exports = router;
