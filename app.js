@@ -3,6 +3,10 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors')
+const session = require('express-session')
+const RedisStore = require("connect-redis")(session)
+const Redis = require("ioredis")
+let redisClient = new Redis()
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -14,6 +18,10 @@ const authRouter = require('./routes/auth');
 
 const app = express();
 
+app.use(session({
+    secret: process.env.SESSION_SECRET || 'secret',
+    store: new RedisStore({client: redisClient})
+}))
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

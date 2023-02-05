@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const { uuid } = require("uuidv4");
 const { faker } = require("@faker-js/faker");
 
 const fs = require("fs");
@@ -27,29 +26,22 @@ router.get("/", function (req, res, _next) {
     });
   }
 
-  const sessionId = uuid();
-  redis.set(sessionId, JSON.stringify(users));
-  res.cookie("sessionId", sessionId);
+  req.session.users = users
   res.json(users);
 });
 
-router.get("/:user", (req, res, _next) => {
-  const sessionId = req.cookies.sessionId;
+router.get("/:user", (req, res, next) => {
+  try {
+    const users = req.session.users
+    const user = users.find(u => u.id == req.params.user)
 
-  redis.get(sessionId, (err, result) => {
-    if (err) {
-      res.status(500).send(err);
-    } else {
-      const users = JSON.parse(result);
-
-      const user = users.find((u) => u.id === parseInt(req.params.user));
-      if (user) {
-        res.send(user);
-      } else {
-        res.status(404).send({ message: "User not found" });
-      }
+    if (user) {
+      return res.json(user)
     }
-  });
-});
+    res.status(404).json({message: "Not found"})
+  } catch (error) {
+    next(error)
+  }
+})
 
 module.exports = router;

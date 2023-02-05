@@ -5,11 +5,12 @@ const expect = chai.expect;
 chai.use(chaiHttp);
 chai.should();
 
+var agent = chai.request.agent(app)
+
 describe("Users", () => {
   describe("GET /users", () => {
     it("should get all users", (done) => {
-      chai
-        .request(app)
+      agent
         .get("/users")
         .end((err, res) => {
           // tests
@@ -24,8 +25,7 @@ describe("Users", () => {
   describe("GET /users/id", () => {
     it("should get a specific user by id", (done) => {
       const id = 5;
-      chai
-        .request(app)
+      agent
         .get(`/users/${id}`)
         .end((err, res) => {
           //  tests
@@ -38,15 +38,10 @@ describe("Users", () => {
           done();
         });
     });
-    it("should not get a single user by id", (done) => {
-      const id = 100;
-      chai
-        .request(app)
-        .get(`/users/${id}`)
-        .end((err, res) => {
-          res.should.have.status(404);
-          done();
-        });
+    it("should not get a single user by id", async () => {
+      const id = 1000;
+      const res = await agent.get(`/users/${id}`)
+      expect(res.status).equals(404)
     });
   });
 });
