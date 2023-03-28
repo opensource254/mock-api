@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const fs = require('fs')
-const posts = JSON.parse(fs.readFileSync('database/posts.json', 'utf-8'))
-const users = JSON.parse(fs.readFileSync('database/users.json', 'utf-8'))
+const { faker } = require("@faker-js/faker");
 
 router.get('/', function (req, res, _next) {
     res.status(404)
@@ -15,22 +13,29 @@ router.get('/', function (req, res, _next) {
  */
 router.get('/:post', (req, res, _next) => {
     const postId = req.params.post
-    if (postId == 0 || postId > posts.length) {
-        res.status(404)
-        res.json('post Not Found')
-        return
+    let posts = []
+    const postsInSession = req.session.postsWithUser
+    if (postsInSession) {
+        posts = postsInSession
+    } else {
+        for (let index = 0; index < 20; index++) {
+            const userId = faker.random.numeric()
+            posts.push({
+                "user_id": userId,
+                "id": index+1,
+                "title": faker.lorem.sentence,
+                "body": faker.lorem.paragraphs(),
+                "user": {
+                    id: userId,
+                    name: faker.name.fullName(),
+                    gender: faker.name.sex(),
+                    createdAt: faker.date.past()
+                }
+            })
+        }
+        req.session.postsWithUser = posts
     }
-    const postWithUserData = posts[postId - 1]
-
-    const userId = posts[postId - 1].user_id
-    if (userId == 0 || userId > users.length) {
-        res.status(404)
-        res.json('User Not Found')
-        return
-    }
-
-    postWithUserData.user_data = users[userId - 1]
-    res.json(postWithUserData)
+    res.json(posts)
 
 });
 
