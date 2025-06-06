@@ -1,0 +1,43 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const path_1 = __importDefault(require("path"));
+const cookie_parser_1 = __importDefault(require("cookie-parser"));
+const morgan_1 = __importDefault(require("morgan"));
+const cors_1 = __importDefault(require("cors"));
+const index_1 = __importDefault(require("./routes/index"));
+const users_1 = __importDefault(require("./routes/users"));
+const posts_1 = __importDefault(require("./routes/posts"));
+const postwithuser_1 = __importDefault(require("./routes/postwithuser"));
+const products_1 = __importDefault(require("./routes/products"));
+const restaurants_1 = __importDefault(require("./routes/restaurants"));
+const auth_1 = __importDefault(require("./routes/auth"));
+const companies_1 = __importDefault(require("./routes/companies"));
+const addresses_1 = __importDefault(require("./routes/addresses"));
+const orders_1 = __importDefault(require("./routes/orders"));
+const app = (0, express_1.default)();
+app.use((0, morgan_1.default)('dev'));
+app.use(express_1.default.json());
+app.use(express_1.default.urlencoded({ extended: false }));
+app.use((0, cookie_parser_1.default)());
+app.use(express_1.default.static(path_1.default.join(__dirname, '..', 'public')));
+app.use((0, cors_1.default)());
+app.use('/', index_1.default);
+app.use('/users', users_1.default);
+app.use('/posts', posts_1.default);
+app.use('/postwithuser', postwithuser_1.default);
+app.use('/products', products_1.default);
+app.use('/restaurants', restaurants_1.default);
+app.use('/auth', auth_1.default);
+app.use('/companies', companies_1.default);
+app.use('/addresses', addresses_1.default);
+app.use('/orders', orders_1.default);
+// Error handling middleware (optional, but good practice)
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+});
+exports.default = app;
