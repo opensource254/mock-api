@@ -1,0 +1,151 @@
+[
+  {
+    "id": "fa94e061-5cfd-4712-8df5-7c7ada3599b5",
+    "street": "6928 E 1st Street",
+    "city": "Sugar Land",
+    "zipCode": "50990",
+    "country": "Belgium",
+    "userId": "4"
+  },
+  {
+    "id": "2f815f6e-6ed4-405b-87f1-ed8ffbfdff2c",
+    "street": "74021 West Avenue",
+    "city": "Baileycester",
+    "zipCode": "50210",
+    "country": "Guinea"
+  },
+  {
+    "id": "a701d0bc-a520-4275-a6a4-723c126709be",
+    "street": "2497 Manor Drive",
+    "city": "Juwanbury",
+    "zipCode": "96278-8054",
+    "country": "Fiji",
+    "userId": "1"
+  },
+  {
+    "id": "8ea3941a-2aa9-4380-b4e9-391ef24e2e05",
+    "street": "749 Grove Lane",
+    "city": "Greenfelderbury",
+    "zipCode": "26177-0813",
+    "country": "Gambia"
+  },
+  {
+    "id": "3feab1dd-7009-4888-a2a3-af2de3b9df09",
+    "street": "5218 Jefferson Street",
+    "city": "Quintonshire",
+    "zipCode": "82871",
+    "country": "Lithuania",
+    "userId": "1"
+  },
+  {
+    "id": "92ebb772-7f51-452e-8394-4ad2542896b5",
+    "street": "501 Fahey Street",
+    "city": "East Jermainmouth",
+    "zipCode": "16273-2342",
+    "country": "Togo"
+  },
+  {
+    "id": "8306a3b0-1b5d-42ed-b98f-b4648657cac7",
+    "street": "363 E Main Street",
+    "city": "West Randi",
+    "zipCode": "09860",
+    "country": "Northern Mariana Islands"
+  },
+  {
+    "id": "5ccad40d-24e1-4688-b049-a709d1fcef60",
+    "street": "29721 Water Lane",
+    "city": "East Joanie",
+    "zipCode": "31498-1740",
+    "country": "Australia"
+  },
+  {
+    "id": "da8999bd-c7ca-48d9-861e-265fcacec718",
+    "street": "859 Willms Vista",
+    "city": "Monroefort",
+    "zipCode": "47973-0287",
+    "country": "Lesotho"
+  },
+  {
+    "id": "d84ec28f-a53c-4129-9ba0-a913853bc41f",
+    "street": "807 Wolf Island",
+    "city": "North Salvatorechester",
+    "zipCode": "01345-2723",
+    "country": "Lebanon",
+    "userId": "2"
+  },
+  {
+    "id": "417c5a5c-a26d-4106-8d37-f8e706cb3d9a",
+    "street": "536 Kuhic Harbor",
+    "city": "Keeblerchester",
+    "zipCode": "78647",
+    "country": "Namibia",
+    "userId": "1"
+  },
+  {
+    "id": "e8ceda23-21db-4b39-ad96-09d10f4c26ed",
+    "street": "131 E Main",
+    "city": "Audreanneberg",
+    "zipCode": "69765",
+    "country": "Sweden"
+  },
+  {
+    "id": "70b947d9-60b0-4f49-a641-b3e07d9db702",
+    "street": "55695 Jerod Spring",
+    "city": "Mooremouth",
+    "zipCode": "32290",
+    "country": "Azerbaijan"
+  },
+  {
+    "id": "1381a987-966c-4679-a2bf-4798929c3610",
+    "street": "180 N Broadway",
+    "city": "Fort Ethyl",
+    "zipCode": "17089-0826",
+    "country": "Seychelles"
+  },
+  {
+    "id": "35abd1b2-91f5-4561-903e-a3efd5f8065c",
+    "street": "9967 Fay Landing",
+    "city": "Port Ednaside",
+    "zipCode": "84893-3585",
+    "country": "Luxembourg"
+  },
+  {
+    "id": "ee1f6507-5404-4e62-ac13-1b9f0675c996",
+    "street": "9799 Ebert Circle",
+    "city": "Katlynnberg",
+    "zipCode": "16995",
+    "country": "Fiji"
+  },
+  {
+    "id": "52c86a43-0afa-4e44-9011-ff132d51c32d",
+    "street": "99370 Ola Trace",
+    "city": "Melodystead",
+    "zipCode": "57916-5940",
+    "country": "North Macedonia",
+    "userId": "3"
+  },
+  {
+    "id": "23a3cb06-1ca0-4548-bc7a-95ae7f21a64c",
+    "street": "5286 Schneider Summit",
+    "city": "South Braulio",
+    "zipCode": "99944",
+    "country": "Panama",
+    "userId": "2"
+  },
+  {
+    "id": "a043d916-4eff-4d66-8810-61e09c2b31c0",
+    "street": "88796 Jessyca Field",
+    "city": "Farmington Hills",
+    "zipCode": "90269",
+    "country": "Vietnam",
+    "userId": "1"
+  },
+  {
+    "id": "0f244bb7-bcef-4c77-85dc-a550c4d064cb",
+    "street": "520 Amalia Glen",
+    "city": "South Abbeyborough",
+    "zipCode": "08120",
+    "country": "South Africa",
+    "userId": "1"
+  }
+]

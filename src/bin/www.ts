@@ -4,9 +4,11 @@
  * Module dependencies.
  */
 
-const app = require('../app');
-const debug = require('debug')('mock-api:server');
-const http = require('http');
+import app from '../app'; // Will resolve to app.ts
+import debugLib from 'debug';
+import http from 'http';
+
+const debug = debugLib('mock-api:server');
 
 /**
  * Get port from environment and store in Express.
@@ -19,7 +21,7 @@ app.set('port', port);
  * Create HTTP server.
  */
 
-const server = http.createServer(app);
+const server: http.Server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -33,17 +35,17 @@ server.on('listening', onListening);
  * Normalize a port into a number, string, or false.
  */
 
-function normalizePort(val) {
-  const port = parseInt(val, 10);
+function normalizePort(val: string): number | string | boolean {
+  const portNumber: number = parseInt(val, 10);
 
-  if (isNaN(port)) {
+  if (isNaN(portNumber)) {
     // named pipe
     return val;
   }
 
-  if (port >= 0) {
+  if (portNumber >= 0) {
     // port number
-    return port;
+    return portNumber;
   }
 
   return false;
@@ -53,12 +55,12 @@ function normalizePort(val) {
  * Event listener for HTTP server "error" event.
  */
 
-function onError(error) {
+function onError(error: NodeJS.ErrnoException): void {
   if (error.syscall !== 'listen') {
     throw error;
   }
 
-  const bind = typeof port === 'string'
+  const bind: string = typeof port === 'string'
     ? 'Pipe ' + port
     : 'Port ' + port;
 
@@ -81,10 +83,15 @@ function onError(error) {
  * Event listener for HTTP server "listening" event.
  */
 
-function onListening() {
+function onListening(): void {
   const addr = server.address();
-  const bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
+  let bind: string;
+  if (typeof addr === 'string') {
+    bind = 'pipe ' + addr;
+  } else if (addr) {
+    bind = 'port ' + addr.port;
+  } else {
+    bind = 'an unknown address'; // Should not happen in normal circumstances
+  }
   debug('Listening on ' + bind);
 }
